@@ -1,0 +1,697 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: popReg;
+  src: url(images/Poppins-Regular.ttf);
+}
+
+:root {
+  --popReg: popReg;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcbcc6;
+  background-image: url(images/PRINCIPESSE.jpeg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  font-family: var(--popReg);
+}
+
+form {
+  height: 90vh;
+  width: 900px;
+  background-color: rgb(0, 0, 0, 0.5);
+  border-radius: 10px;
+  position: relative;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  background-color: rgb(0, 0, 0, 0.4);
+  padding: 5px 0px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+h2 {
+  color: white;
+  font-size: 20px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+input {
+  height: 30px;
+  /* width: 250px; */
+  font-size: 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 0px 5px 0px 5px;
+}
+
+label {
+  color: white;
+}
+
+.mainContent {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  /* background-color: red; */
+  position: relative;
+}
+
+.nameInput1 {
+  position: relative;
+  left: 150px;
+}
+
+.nameInput2 {
+  position: relative;
+  left: 170px;
+}
+
+.company {
+  margin-top: 30px;
+}
+
+.companyInput {
+  left: 108px;
+  position: relative;
+}
+
+.companyInput input {
+  width: 535px;
+  position: relative;
+}
+
+.email {
+  margin-top: 40px;
+}
+
+.emailInput {
+  position: relative;
+  left: 154px;
+}
+
+.emailInput input {
+  width: 535px;
+}
+
+.phoneField {
+  margin-top: 40px;
+}
+
+.phoneInput1 {
+  position: relative;
+  left: 146px;
+}
+
+.phoneInput1 input {
+  width: 55px;
+}
+
+.phoneInput2 {
+  position: relative;
+  left: 197px;
+}
+
+.phoneInput2 input {
+  width: 385px;
+}
+
+.subject {
+  margin-top: 20px;
+}
+
+.selectSub {
+  position: relative;
+  left: 130px;
+}
+
+.selectSub select {
+  height: 30px;
+  font-size: 17px;
+  width: 533px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.query {
+  margin-top: 30px;
+}
+
+.radioBtn1,
+.radioBtn2 {
+  align-items: center;
+}
+
+.query button {
+  padding: 10px;
+  width: 195px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  margin-top: 20px;
+  background-color: rgb(121, 233, 233);
+  font-weight: 700;
+  color: #000;
+}
+
+/* =========================== Media Queries ========================== */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1601px) and (max-width: 1841px) {
+
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1600px) {
+
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1440px) {
+
+  h1 {
+    font-size: 25px;
+  }
+
+  form {
+    width: 800px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  .nameInput1 {
+    left: 130px;
+  }
+
+  .nameInput2 {
+    left: 135px;
+  }
+
+  .companyInput {
+    left: 100px;
+  }
+
+  .companyInput input {
+    width: 520px;
+  }
+
+  .emailInput {
+    left: 133px;
+  }
+
+  .emailInput input {
+    width: 522px;
+  }
+
+  .phoneInput1 {
+    left: 128px;
+  }
+
+  .phoneInput1 input {
+    width: 55px;
+  }
+
+  .phoneInput2 {
+    left: 167px;
+  }
+
+  .phoneInput2 input {
+    width: 385px;
+  }
+
+  .selectSub {
+    left: 118px;
+  }
+
+  .selectSub select {
+    height: 30px;
+    width: 523px;
+  }
+
+  .query button {
+    padding: 10px;
+    width: 135px;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+
+  h1 {
+    font-size: 25px;
+  }
+  form {
+    width: 800px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  .nameInput1 {
+    left: 130px;
+  }
+
+  .nameInput2 {
+    left: 135px;
+  }
+
+  .companyInput {
+    left: 100px;
+  }
+
+  .companyInput input {
+    width: 520px;
+  }
+
+  .emailInput {
+    left: 133px;
+  }
+
+  .emailInput input {
+    width: 522px;
+  }
+
+  .phoneInput1 {
+    left: 128px;
+  }
+
+  .phoneInput1 input {
+    width: 55px;
+  }
+
+  .phoneInput2 {
+    left: 167px;
+  }
+
+  .phoneInput2 input {
+    width: 385px;
+  }
+
+  .selectSub {
+    left: 118px;
+  }
+
+  .selectSub select {
+    height: 30px;
+    width: 523px;
+  }
+
+  .query button {
+    padding: 10px;
+    width: 135px;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+  form {
+    width: 700px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  input {
+    height: 25px;
+  }
+
+  label {
+    font-size: 15px;
+  }
+
+  .nameInput1 {
+    left: 110px;
+    width: 220px;
+  }
+
+  .nameInput2 {
+    left: 125px;
+    width: 220px;
+  }
+
+  .companyInput {
+    left: 80px;
+  }
+
+  .companyInput input {
+    width: 463px;
+  }
+
+  .emailInput {
+    left: 114px;
+  }
+
+  .emailInput input {
+    width: 460px;
+  }
+
+  .phoneInput1 {
+    left: 110px;
+  }
+
+  .phoneInput1 input {
+    width: 45px;
+  }
+
+  .phoneInput2 {
+    left: 127px;
+  }
+
+  .phoneInput2 input {
+    width: 350px;
+  }
+
+  .selectSub {
+    left: 98px;
+  }
+
+  .selectSub select {
+    width: 460px;
+  }
+
+  .query button {
+    padding: 10px;
+    width: 135px;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+
+ h1 {
+    font-size: 25px;
+  }
+
+  form {
+    width: 500px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  input {
+    height: 25px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  .nameInput1 {
+    left: 50px;
+    width: 165px;
+  }
+
+  .nameInput2 {
+    left: 55px;
+    width: 160px;
+  }
+
+  .companyInput {
+    left: 18px;
+  }
+
+  .companyInput input {
+    width: 339px;
+  }
+
+  .emailInput {
+    left: 54px;
+  }
+
+  .emailInput input {
+    width: 340px;
+  }
+
+  .phoneInput1 {
+    left: 45px;
+  }
+
+  .phoneInput1 input {
+    width: 35px;
+  }
+
+  .phoneInput2 {
+    left: 50px;
+  }
+
+  .phoneInput2 input {
+    width: 260px;
+  }
+
+  .selectSub {
+    left: 38px;
+  }
+
+  .selectSub select {
+    height: 25px;
+    width: 340px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+
+  .query button {
+    width: 95px;
+    font-size: 15px;
+  }
+
+  .radioBtns label {
+    font-size: 16px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+
+  form {
+    width: 350px;
+  }
+
+  h1 {
+    font-size: 23px;
+  }
+
+
+  h2 {
+    font-size: 16px;
+  }
+
+  input {
+    height: 25px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  .nameInputs {
+    flex-direction: column;
+  }
+
+  .nameInput1 {
+    left: 50px;
+    width: 195px;
+  }
+
+  .nameInput2 {
+    left: 50px;
+    width: 195px;
+  }
+
+  .companyInput {
+    left: 18px;
+  }
+
+  .companyInput input {
+    width: 195px;
+  }
+
+  .emailInput {
+    left: 54px;
+  }
+
+  .emailInput input {
+    width: 195px;
+  }
+
+  .phoneInputs {
+    flex-direction: column;
+  }
+
+  .phoneInput1 {
+    left: 45px;
+  }
+
+  .phoneInput1 input {
+    width: 35px;
+  }
+
+  .phoneInput2 {
+    left: 40px;
+  }
+
+  .phoneInput2 input {
+    width: 195px;
+  }
+
+  .selectSub {
+    left: 28px;
+  }
+
+  .selectSub select {
+    height: 23px;
+    width: 195px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+
+  .query button {
+    width: 95px;
+    font-size: 15px;
+  }
+
+  .radioBtns label {
+    font-size: 16px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 399px) {
+
+  form {
+    width: 300px;
+  }
+
+  h1 {
+    font-size: 17px;
+  }
+
+
+  h2 {
+    font-size: 12px;
+  }
+
+  input {
+    height: 18px;
+    font-size: 13px;
+    border-radius: 5px;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  .nameInputs {
+    flex-direction: column;
+  }
+
+  .nameInput1 {
+    left: 35px;
+    width: 165px;
+  }
+
+  .nameInput2 {
+    left: 35px;
+    width: 165px;
+  }
+
+  .companyInput {
+    left: 12px;
+  }
+
+  .companyInput input {
+    width: 165px;
+  }
+
+  .emailInput {
+    left: 40px;
+  }
+
+  .emailInput input {
+    width: 165px;
+  }
+
+  .phoneInputs {
+    flex-direction: column;
+  }
+
+  .phoneInput1 {
+    left: 35px;
+  }
+
+  .phoneInput1 input {
+    width: 35px;
+  }
+
+  .phoneInput2 {
+    left: 35px;
+  }
+
+  .phoneInput2 input {
+    width: 165px;
+  }
+
+  .selectSub {
+    left: 28px;
+  }
+
+  .selectSub select {
+    height: 23px;
+    width: 165px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+
+  .query button {
+    width: 95px;
+    font-size: 15px;
+  }
+
+  .radioBtns label {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <form action="">
+      <h1>Registration</h1>
+      <div class="mainContent">
+        <div class="nameField flex">
+          <h2>Name:</h2>
+          <div class="nameInputs flex">
+            <div class="nameInput1 flexCol">
+              <input type="text" name="fname" />
+              <label for="fname">First Name</label>
+            </div>
+            <div class="nameInput2 flexCol">
+              <input type="text" name="lname" />
+              <label for="lname">Last Name</label>
+            </div>
+          </div>
+        </div>
+        <div class="company flex">
+          <h2>Company:</h2>
+          <div class="companyInput">
+            <input type="text" name="company" />
+          </div>
+        </div>
+        <div class="email flex">
+          <h2>Email:</h2>
+          <div class="emailInput">
+            <input type="email" name="email" />
+          </div>
+        </div>
+        <div class="phoneField flex">
+          <h2>Phone:</h2>
+          <div class="phoneInputs flex">
+            <div class="phoneInput1 flexCol">
+              <input type="number" name="areaCode" />
+              <label for="areaCode">Area Code</label>
+            </div>
+            <div class="phoneInput2 flexCol">
+              <input type="number" name="phoneNumber" />
+              <label for="phoneNumber">Phone Number</label>
+            </div>
+          </div>
+        </div>
+        <div class="subject flex">
+          <h2>Subject:</h2>
+          <div class="selectSub">
+            <select name="subject" id="option">
+              <option disabled selected>--choose option</option>
+              <option value="">Subject 1</option>
+              <option value="">Subject 2</option>
+              <option value="">Subject 3</option>
+            </select>
+          </div>
+        </div>
+        <div class="query flexCol">
+          <h2>Are you beginner?</h2>
+          <div class="radioBtns flex">
+            <div class="radioBtn1 flex">
+              <input type="radio" name="" />
+              <label for="">Yes</label>
+            </div>
+            <div class="radioBtn2 flex">
+              <input type="radio" name="" />
+              <label for="">No</label>
+            </div>
+          </div>
+          <button type="submit">Register</button>
+        </div>
+      </div>
+    </form>
+    <script defer src="main.js"></script>
+  </body>
+</html>
